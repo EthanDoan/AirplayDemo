@@ -51,9 +51,7 @@
         _tvViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"TVViewController"];
         
         tvWindow.rootViewController = _tvViewController;
-        
-        [_tvViewController playWebView];
-        
+                
         // Resize the view to fit the external screen        
         _tvViewController.view.frame = screenBounds;
 
