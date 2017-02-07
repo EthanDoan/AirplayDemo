@@ -42,9 +42,14 @@
 
 - (void)playWebView {
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Bakvendtland" ofType:@"mp4"];
-    NSURL *fileUrl = [NSURL URLWithString:filePath];
-    NSURLRequest *request = [NSURLRequest requestWithURL:fileUrl];
+    NSString *string = @"http://m-stream.lizks.com/video360p/008o9d.mp4";
+    NSURL *stringUrl = [NSURL URLWithString:string];
+
+    
+    //NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Bakvendtland" ofType:@"mp4"];
+    //NSURL *fileUrl = [NSURL URLWithString:filePath];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:stringUrl];
     _webView.mediaPlaybackAllowsAirPlay = YES;
     _webView.mediaPlaybackRequiresUserAction = NO;
     
@@ -53,9 +58,14 @@
 
 
 - (void)mpMoviePlayerController {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Bakvendtland" ofType:@"mp4"];
-    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
-    _mpMoviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: fileUrl];
+    
+    NSString *string = @"http://m-stream.lizks.com/video360p/008o9d.mp4";
+    NSURL *stringUrl = [NSURL URLWithString:string];
+    
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Bakvendtland" ofType:@"mp4"];
+//    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
+    
+    _mpMoviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: stringUrl];
     [_mpMoviePlayer.view setFrame: self.view.bounds];
     [_mpMoviePlayer play];
 
