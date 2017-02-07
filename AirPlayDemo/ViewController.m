@@ -13,7 +13,6 @@
 {
     UIWindow *tvWindow;
     UIScreen *tvScreen;
-    NSString *link;
 }
 
 @end

@@ -27,7 +27,6 @@
 		0253D2251E486E42005836AE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2241E486E42005836AE /* CoreMedia.framework */; };
 		0253D2271E486E4A005836AE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2261E486E4A005836AE /* MediaPlayer.framework */; };
 		0253D22A1E4887E3005836AE /* CaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0253D2291E4887E3005836AE /* CaptureSession.m */; };
-		0253D22C1E4967D1005836AE /* Bakvendtland.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0253D22B1E4965CB005836AE /* Bakvendtland.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		0253D2261E486E4A005836AE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0253D2281E4887E3005836AE /* CaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSession.h; sourceTree = "<group>"; };
 		0253D2291E4887E3005836AE /* CaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSession.m; sourceTree = "<group>"; };
-		0253D22B1E4965CB005836AE /* Bakvendtland.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bakvendtland.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +143,6 @@
 		0253D1E21E485C34005836AE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0253D22B1E4965CB005836AE /* Bakvendtland.mp4 */,
 				0253D1E31E485C34005836AE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -261,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0253D22C1E4967D1005836AE /* Bakvendtland.mp4 in Resources */,
 				0253D1F21E485C34005836AE /* LaunchScreen.storyboard in Resources */,
 				0253D1EF1E485C34005836AE /* Assets.xcassets in Resources */,
 				0253D1ED1E485C34005836AE /* Main.storyboard in Resources */,

@@ -44,10 +44,6 @@
     
     NSString *string = @"http://m-stream.lizks.com/video360p/008o9d.mp4";
     NSURL *stringUrl = [NSURL URLWithString:string];
-
-    
-    //NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Bakvendtland" ofType:@"mp4"];
-    //NSURL *fileUrl = [NSURL URLWithString:filePath];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:stringUrl];
     _webView.mediaPlaybackAllowsAirPlay = YES;
@@ -61,9 +57,6 @@
     
     NSString *string = @"http://video.chiase.io:1935/366d6ba4-40c9-4870-9c78-80ad4222bfddvod/mp4:h264_videos/oyremz.mp4/playlist.m3u8";
     NSURL *stringUrl = [NSURL URLWithString:string];
-    
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Bakvendtland" ofType:@"mp4"];
-//    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
     
     _mpMoviePlayer = [[MPMoviePlayerController alloc] initWithContentURL: stringUrl];
     [_mpMoviePlayer.view setFrame: self.view.bounds];
