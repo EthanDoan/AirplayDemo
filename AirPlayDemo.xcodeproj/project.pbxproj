@@ -27,6 +27,7 @@
 		0253D2251E486E42005836AE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2241E486E42005836AE /* CoreMedia.framework */; };
 		0253D2271E486E4A005836AE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2261E486E4A005836AE /* MediaPlayer.framework */; };
 		0253D22A1E4887E3005836AE /* CaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0253D2291E4887E3005836AE /* CaptureSession.m */; };
+		CA70C914BB7092C6A0A2649D /* libPods-AirPlayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 214F4DA3738E7022382A4F78 /* libPods-AirPlayDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,9 @@
 		0253D2261E486E4A005836AE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0253D2281E4887E3005836AE /* CaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSession.h; sourceTree = "<group>"; };
 		0253D2291E4887E3005836AE /* CaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSession.m; sourceTree = "<group>"; };
+		214F4DA3738E7022382A4F78 /* libPods-AirPlayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirPlayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EEFD32383BA79412A969197 /* Pods-AirPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPlayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirPlayDemo/Pods-AirPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C8E855C6C4145BB3C9A7D447 /* Pods-AirPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPlayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirPlayDemo/Pods-AirPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				0253D20D1E4864E8005836AE /* UIKit.framework in Frameworks */,
 				0253D20B1E4864E2005836AE /* QuartzCore.framework in Frameworks */,
 				0253D2091E4864D6005836AE /* AVFoundation.framework in Frameworks */,
+				CA70C914BB7092C6A0A2649D /* libPods-AirPlayDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +111,7 @@
 				0253D1FB1E485C34005836AE /* AirPlayDemoTests */,
 				0253D1E01E485C34005836AE /* Products */,
 				0253D2071E4864D6005836AE /* Frameworks */,
+				203BD7EC895AC86140515BF7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,8 +176,18 @@
 				0253D20C1E4864E8005836AE /* UIKit.framework */,
 				0253D20A1E4864E2005836AE /* QuartzCore.framework */,
 				0253D2081E4864D6005836AE /* AVFoundation.framework */,
+				214F4DA3738E7022382A4F78 /* libPods-AirPlayDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		203BD7EC895AC86140515BF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E855C6C4145BB3C9A7D447 /* Pods-AirPlayDemo.debug.xcconfig */,
+				6EEFD32383BA79412A969197 /* Pods-AirPlayDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0253D2011E485C34005836AE /* Build configuration list for PBXNativeTarget "AirPlayDemo" */;
 			buildPhases = (
+				A1EDEDE37C37999055CE9569 /* [CP] Check Pods Manifest.lock */,
 				0253D1DB1E485C34005836AE /* Sources */,
 				0253D1DC1E485C34005836AE /* Frameworks */,
 				0253D1DD1E485C34005836AE /* Resources */,
+				41E5694F8C9B90149B763D69 /* [CP] Embed Pods Frameworks */,
+				71506EA0191108D2A461107B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41E5694F8C9B90149B763D69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirPlayDemo/Pods-AirPlayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71506EA0191108D2A461107B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirPlayDemo/Pods-AirPlayDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EDEDE37C37999055CE9569 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0253D1DB1E485C34005836AE /* Sources */ = {
@@ -415,6 +482,7 @@
 		};
 		0253D2021E485C34005836AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8E855C6C4145BB3C9A7D447 /* Pods-AirPlayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RC9B9M5SNE;
@@ -428,6 +496,7 @@
 		};
 		0253D2031E485C34005836AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EEFD32383BA79412A969197 /* Pods-AirPlayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RC9B9M5SNE;
