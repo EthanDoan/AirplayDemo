@@ -21,12 +21,18 @@
 		0253D2111E4864FB005836AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2101E4864FB005836AE /* CoreGraphics.framework */; };
 		0253D2131E48650E005836AE /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2121E48650E005836AE /* GLKit.framework */; };
 		0253D2151E486515005836AE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2141E486515005836AE /* AudioToolbox.framework */; };
-		0253D2181E4865BA005836AE /* TabletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0253D2171E4865BA005836AE /* TabletViewController.m */; };
 		0253D21B1E4865DB005836AE /* TVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0253D21A1E4865DB005836AE /* TVViewController.m */; };
 		0253D2231E486E3B005836AE /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2221E486E3B005836AE /* AVKit.framework */; };
 		0253D2251E486E42005836AE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2241E486E42005836AE /* CoreMedia.framework */; };
 		0253D2271E486E4A005836AE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0253D2261E486E4A005836AE /* MediaPlayer.framework */; };
 		0253D22A1E4887E3005836AE /* CaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0253D2291E4887E3005836AE /* CaptureSession.m */; };
+		02C5BD921E49B22C005509C2 /* FaceTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5BD8B1E49B22C005509C2 /* FaceTracker.m */; };
+		02C5BD931E49B22C005509C2 /* NoseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5BD8D1E49B22C005509C2 /* NoseView.m */; };
+		02C5BD941E49B22C005509C2 /* SunglassEyeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5BD8F1E49B22C005509C2 /* SunglassEyeView.m */; };
+		02C5BD951E49B22C005509C2 /* CheekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C5BD911E49B22C005509C2 /* CheekView.m */; };
+		02C5BD991E49B29B005509C2 /* img_heartpink.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5BD961E49B29B005509C2 /* img_heartpink.png */; };
+		02C5BD9A1E49B29B005509C2 /* img_rednose.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5BD971E49B29B005509C2 /* img_rednose.png */; };
+		02C5BD9B1E49B29B005509C2 /* img_sunglass.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C5BD981E49B29B005509C2 /* img_sunglass.png */; };
 		CA70C914BB7092C6A0A2649D /* libPods-AirPlayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 214F4DA3738E7022382A4F78 /* libPods-AirPlayDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +67,6 @@
 		0253D2101E4864FB005836AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0253D2121E48650E005836AE /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		0253D2141E486515005836AE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		0253D2161E4865BA005836AE /* TabletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabletViewController.h; path = ../TabletViewController.h; sourceTree = "<group>"; };
-		0253D2171E4865BA005836AE /* TabletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabletViewController.m; path = ../TabletViewController.m; sourceTree = "<group>"; };
 		0253D2191E4865DB005836AE /* TVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVViewController.h; sourceTree = "<group>"; };
 		0253D21A1E4865DB005836AE /* TVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVViewController.m; sourceTree = "<group>"; };
 		0253D2221E486E3B005836AE /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -70,6 +74,17 @@
 		0253D2261E486E4A005836AE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		0253D2281E4887E3005836AE /* CaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSession.h; sourceTree = "<group>"; };
 		0253D2291E4887E3005836AE /* CaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSession.m; sourceTree = "<group>"; };
+		02C5BD8A1E49B22C005509C2 /* FaceTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceTracker.h; sourceTree = "<group>"; };
+		02C5BD8B1E49B22C005509C2 /* FaceTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceTracker.m; sourceTree = "<group>"; };
+		02C5BD8C1E49B22C005509C2 /* NoseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoseView.h; sourceTree = "<group>"; };
+		02C5BD8D1E49B22C005509C2 /* NoseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoseView.m; sourceTree = "<group>"; };
+		02C5BD8E1E49B22C005509C2 /* SunglassEyeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunglassEyeView.h; sourceTree = "<group>"; };
+		02C5BD8F1E49B22C005509C2 /* SunglassEyeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunglassEyeView.m; sourceTree = "<group>"; };
+		02C5BD901E49B22C005509C2 /* CheekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheekView.h; sourceTree = "<group>"; };
+		02C5BD911E49B22C005509C2 /* CheekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheekView.m; sourceTree = "<group>"; };
+		02C5BD961E49B29B005509C2 /* img_heartpink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_heartpink.png; sourceTree = "<group>"; };
+		02C5BD971E49B29B005509C2 /* img_rednose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_rednose.png; sourceTree = "<group>"; };
+		02C5BD981E49B29B005509C2 /* img_sunglass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_sunglass.png; sourceTree = "<group>"; };
 		214F4DA3738E7022382A4F78 /* libPods-AirPlayDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AirPlayDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEFD32383BA79412A969197 /* Pods-AirPlayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPlayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirPlayDemo/Pods-AirPlayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C8E855C6C4145BB3C9A7D447 /* Pods-AirPlayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPlayDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirPlayDemo/Pods-AirPlayDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +122,7 @@
 		0253D1D61E485C34005836AE = {
 			isa = PBXGroup;
 			children = (
+				02C5BD9C1E49B2A0005509C2 /* image */,
 				0253D1E11E485C34005836AE /* AirPlayDemo */,
 				0253D1FB1E485C34005836AE /* AirPlayDemoTests */,
 				0253D1E01E485C34005836AE /* Products */,
@@ -127,12 +143,18 @@
 		0253D1E11E485C34005836AE /* AirPlayDemo */ = {
 			isa = PBXGroup;
 			children = (
+				02C5BD8A1E49B22C005509C2 /* FaceTracker.h */,
+				02C5BD8B1E49B22C005509C2 /* FaceTracker.m */,
+				02C5BD8C1E49B22C005509C2 /* NoseView.h */,
+				02C5BD8D1E49B22C005509C2 /* NoseView.m */,
+				02C5BD8E1E49B22C005509C2 /* SunglassEyeView.h */,
+				02C5BD8F1E49B22C005509C2 /* SunglassEyeView.m */,
+				02C5BD901E49B22C005509C2 /* CheekView.h */,
+				02C5BD911E49B22C005509C2 /* CheekView.m */,
 				0253D1E51E485C34005836AE /* AppDelegate.h */,
 				0253D1E61E485C34005836AE /* AppDelegate.m */,
 				0253D1E81E485C34005836AE /* ViewController.h */,
 				0253D1E91E485C34005836AE /* ViewController.m */,
-				0253D2161E4865BA005836AE /* TabletViewController.h */,
-				0253D2171E4865BA005836AE /* TabletViewController.m */,
 				0253D2191E4865DB005836AE /* TVViewController.h */,
 				0253D21A1E4865DB005836AE /* TVViewController.m */,
 				0253D2281E4887E3005836AE /* CaptureSession.h */,
@@ -179,6 +201,16 @@
 				214F4DA3738E7022382A4F78 /* libPods-AirPlayDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02C5BD9C1E49B2A0005509C2 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				02C5BD961E49B29B005509C2 /* img_heartpink.png */,
+				02C5BD971E49B29B005509C2 /* img_rednose.png */,
+				02C5BD981E49B29B005509C2 /* img_sunglass.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 		203BD7EC895AC86140515BF7 /* Pods */ = {
@@ -279,6 +311,9 @@
 			files = (
 				0253D1F21E485C34005836AE /* LaunchScreen.storyboard in Resources */,
 				0253D1EF1E485C34005836AE /* Assets.xcassets in Resources */,
+				02C5BD991E49B29B005509C2 /* img_heartpink.png in Resources */,
+				02C5BD9B1E49B29B005509C2 /* img_sunglass.png in Resources */,
+				02C5BD9A1E49B29B005509C2 /* img_rednose.png in Resources */,
 				0253D1ED1E485C34005836AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,7 +370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -345,12 +380,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C5BD921E49B22C005509C2 /* FaceTracker.m in Sources */,
 				0253D21B1E4865DB005836AE /* TVViewController.m in Sources */,
-				0253D2181E4865BA005836AE /* TabletViewController.m in Sources */,
 				0253D1EA1E485C34005836AE /* ViewController.m in Sources */,
 				0253D22A1E4887E3005836AE /* CaptureSession.m in Sources */,
+				02C5BD931E49B22C005509C2 /* NoseView.m in Sources */,
 				0253D1E71E485C34005836AE /* AppDelegate.m in Sources */,
+				02C5BD941E49B22C005509C2 /* SunglassEyeView.m in Sources */,
 				0253D1E41E485C34005836AE /* main.m in Sources */,
+				02C5BD951E49B22C005509C2 /* CheekView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

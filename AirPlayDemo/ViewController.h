@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "TVViewController.h"
-#import "TabletViewController.h"
+#import "CaptureSession.h"
 
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) TVViewController *tvViewController;
-@property (nonatomic, strong) TabletViewController *tabletViewController;
+@property (weak, nonatomic) IBOutlet UIView *previewLayerView;
+@property (weak, nonatomic) IBOutlet UIView *overlay;
+
+@property (strong, nonatomic) CaptureSession *session;
+@property (strong, nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 
 @end
 

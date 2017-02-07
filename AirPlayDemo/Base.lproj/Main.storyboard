@@ -21,18 +21,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y26-KX-zza">
-                                <rect key="frame" x="132" y="617" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play video"/>
-                                <connections>
-                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="70i-1E-rnp"/>
-                                    <segue destination="iOc-JB-Jbg" kind="show" id="0cC-x3-qi2"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8z-kj-JRw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-eE-mwf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p8z-kj-JRw" secondAttribute="bottom" constant="100" id="1P3-X5-CAP"/>
+                            <constraint firstItem="9aJ-eE-mwf" firstAttribute="centerX" secondItem="p8z-kj-JRw" secondAttribute="centerX" id="FD5-8W-Wed"/>
+                            <constraint firstItem="9aJ-eE-mwf" firstAttribute="width" secondItem="p8z-kj-JRw" secondAttribute="width" id="OB0-40-OqL"/>
+                            <constraint firstItem="9aJ-eE-mwf" firstAttribute="height" secondItem="p8z-kj-JRw" secondAttribute="height" id="Sf4-P8-zyO"/>
+                            <constraint firstItem="9aJ-eE-mwf" firstAttribute="centerY" secondItem="p8z-kj-JRw" secondAttribute="centerY" id="Y3C-nd-wRh"/>
+                            <constraint firstItem="p8z-kj-JRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aar-FL-7IQ"/>
+                            <constraint firstItem="p8z-kj-JRw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ah0-sA-75F"/>
+                            <constraint firstAttribute="trailing" secondItem="p8z-kj-JRw" secondAttribute="trailing" id="cRi-M2-kLR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="overlay" destination="9aJ-eE-mwf" id="IAo-dD-P0B"/>
+                        <outlet property="previewLayerView" destination="p8z-kj-JRw" id="6uv-FX-40M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,39 +90,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myf-ZG-gaN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756" y="36.431784107946029"/>
-        </scene>
-        <!--Tablet View Controller-->
-        <scene sceneID="U1c-cj-JGu">
-            <objects>
-                <viewController storyboardIdentifier="TabletViewController" id="YFK-b9-xc1" customClass="TabletViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aEj-H7-Sfh"/>
-                        <viewControllerLayoutGuide type="bottom" id="bzc-wc-9r9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="68i-s3-SrE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXm-YE-GOU">
-                                <rect key="frame" x="0.0" y="48" width="375" height="535"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bzc-wc-9r9" firstAttribute="top" secondItem="rXm-YE-GOU" secondAttribute="bottom" constant="84" id="3Mq-Ph-ml5"/>
-                            <constraint firstAttribute="trailing" secondItem="rXm-YE-GOU" secondAttribute="trailing" id="6xk-9C-uMf"/>
-                            <constraint firstItem="rXm-YE-GOU" firstAttribute="top" secondItem="aEj-H7-Sfh" secondAttribute="bottom" constant="28" id="bek-UU-yoo"/>
-                            <constraint firstItem="rXm-YE-GOU" firstAttribute="leading" secondItem="68i-s3-SrE" secondAttribute="leading" id="hhd-Pd-gpC"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="previewLayerView" destination="rXm-YE-GOU" id="3fL-oc-i10"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c3W-0p-0EB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="756" y="717"/>
         </scene>
     </scenes>
 </document>
