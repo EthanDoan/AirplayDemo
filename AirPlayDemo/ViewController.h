@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TVViewController.h"
+#import "TabletViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) TVViewController *tvViewController;
+@property (nonatomic, strong) TabletViewController *tabletViewController;
 
 @end
 
