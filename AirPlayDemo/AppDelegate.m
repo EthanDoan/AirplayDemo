@@ -29,6 +29,10 @@
     NSLog(@"444");
 
     NSLog(@"555");
+    
+    NSLog(@"666");
+    
+    NSLog(@"888");
 
     return YES;
 }
@@ -39,6 +43,11 @@
     NSLog(@"4444 interrupt");
     
     NSLog(@"5555 interrupt");
+
+    NSLog(@"6666 interrupt");
+    
+    NSLog(@"888 interrupt");
+
 
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
