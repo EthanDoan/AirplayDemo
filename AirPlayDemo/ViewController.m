@@ -22,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"commit from master");
+    
     _tabletViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:NULL] instantiateViewControllerWithIdentifier:@"TabletViewController"];
         
     [self checkForExistingScreenAndInitializeIfPresent];
