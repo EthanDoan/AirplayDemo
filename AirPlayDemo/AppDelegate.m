@@ -31,8 +31,6 @@
     NSLog(@"555");
     
     NSLog(@"666");
-    
-    NSLog(@"888");
 
     return YES;
 }
