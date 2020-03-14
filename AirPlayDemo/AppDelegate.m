@@ -34,6 +34,8 @@
     
     NSLog(@"999");
 
+    NSLog(@"10");
+
     return YES;
 }
 
