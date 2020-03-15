@@ -36,7 +36,7 @@
 
     NSLog(@"10");
     
-    NSLog(@"p1");
+    NSLog(@"p1 - edited");
 
     return YES;
 }
