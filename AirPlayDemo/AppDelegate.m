@@ -38,6 +38,8 @@
     
     NSLog(@"p1 - edited");
 
+    NSLog(@"p2");
+    
     return YES;
 }
 
